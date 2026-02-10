@@ -9,6 +9,8 @@ Alumno:	Ricardo Roberto Rodríguez Velasco
 
 Carrera:	Técnico Superior Universitario en Programación
 
+Tutor: Gabriel Gomez
+
 Proyecto:	Prácticas Profesionales
 
 Fecha de inicio	12/06/2024
