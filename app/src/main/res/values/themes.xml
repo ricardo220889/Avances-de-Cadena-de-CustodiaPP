@@ -2,8 +2,39 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.CadenaCustodiaPP" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/green2</item>
+        <item name="colorPrimaryDark">#285029</item>
+        <item name="colorAccent">@color/gray</item>
+        <item name="colorControlNormal">@color/black</item>
+
+        <item name="android:statusBarColor">@color/green2</item>
+        <item name="android:windowFullscreen">false</item>
     </style>
 
     <style name="Theme.CadenaCustodiaPP" parent="Base.Theme.CadenaCustodiaPP" />
+
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <item name="boxStrokeColor">#000700</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="counterTextColor">@color/black</item>
+        <item name="startIconTint">#285029</item>
+        <item name="boxBackgroundColor">#fff</item>
+    </style>
+
+    <style name="TextInputLayoutStyleDrop" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">#000700</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="startIconTint">#285029</item>
+        <item name="boxBackgroundColor">#fff</item>
+
+    </style>
+
 </resources>

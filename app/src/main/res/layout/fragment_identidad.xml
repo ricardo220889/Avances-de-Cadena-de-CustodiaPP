@@ -1,14 +1,531 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.IdentidadFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:backgroundTint="@color/white"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <ScrollView
+                    android:layout_width="300sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="IDENTIDAD"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:text="Primer Indicio"
+                            android:textAlignment="center"
+                            android:textColor="@color/orange"
+                            android:textSize="15sp"
+                            android:textStyle="italic" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/identificacion1"
+                            style="@style/TextInputLayoutStyleDrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Identificación"
+                            app:boxBackgroundMode="outline"
+                            app:startIconDrawable="@drawable/ic_baseline_help_center_24">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/identificacionET1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="number"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/descripcion1"
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Descripción"
+                            app:boxBackgroundMode="outline"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="300"
+                            app:startIconDrawable="@drawable/ic_baseline_help_center_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/descripcionET1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="300"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/ubicacion1"
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:hint="Ubicación en el lugar"
+                            app:boxBackgroundMode="outline"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="250"
+                            app:startIconDrawable="@drawable/ic_baseline_help_center_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ubicacionET1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="250"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/hora_recoleccion1"
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Hora de recolección"
+                            app:boxBackgroundMode="outline"
+                            app:startIconDrawable="@drawable/baseline_access_time_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/recoleccionET1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="time"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:text="Segundo Indicio"
+                            android:textAlignment="center"
+                            android:textColor="@color/orange"
+                            android:textSize="15sp"
+                            android:textStyle="italic" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/identificacion2"
+                            style="@style/TextInputLayoutStyleDrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Identificación"
+                            app:boxBackgroundMode="outline">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/identificacionET2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="number"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/descripcion2"
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Descripción"
+                            app:boxBackgroundMode="outline"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="300">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/descripcionET2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="300"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/ubicacion2"
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Ubicación en el lugar"
+                            app:boxBackgroundMode="outline"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="250">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ubicacionET2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="250"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/hora_recoleccion2"
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Hora de recolección"
+                            app:boxBackgroundMode="outline"
+                            app:startIconDrawable="@drawable/baseline_access_time_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/recoleccionET2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="time"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:text="Tercer Indicio"
+                            android:textAlignment="center"
+                            android:textColor="@color/orange"
+                            android:textSize="15sp"
+                            android:textStyle="italic" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/identificacion3"
+                            style="@style/TextInputLayoutStyleDrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Identificación"
+                            app:boxBackgroundMode="outline">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/identificacionET3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="number"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/descripcion3"
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Descripción"
+                            app:boxBackgroundMode="outline"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="300">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/descripcionET3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="300"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/ubicacion3"
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Ubicación en el lugar"
+                            app:boxBackgroundMode="outline"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="250">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ubicacionET3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="250"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/hora_recoleccion3"
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Hora de recolección"
+                            app:boxBackgroundMode="outline"
+                            app:startIconDrawable="@drawable/baseline_access_time_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/recoleccionET3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="time"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:text="Cuarto Indicio"
+                            android:textAlignment="center"
+                            android:textColor="@color/orange"
+                            android:textSize="15sp"
+                            android:textStyle="italic" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/identificacion4"
+                            style="@style/TextInputLayoutStyleDrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Identificación"
+                            app:boxBackgroundMode="outline">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/identificacionET4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="number"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/descripcion4"
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Descripción"
+                            app:boxBackgroundMode="outline"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="300">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/descripcionET4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="300"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/ubicacion4"
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Ubicación en el lugar"
+                            app:boxBackgroundMode="outline"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="250">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ubicacionET4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="250"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/hora_recoleccion4"
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Hora de recolección"
+                            app:boxBackgroundMode="outline"
+                            app:startIconDrawable="@drawable/baseline_access_time_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/recoleccionET4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="time"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:text="Quinto Indicio"
+                            android:textAlignment="center"
+                            android:textColor="@color/orange"
+                            android:textSize="15sp"
+                            android:textStyle="italic" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/identificacion5"
+                            style="@style/TextInputLayoutStyleDrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Identificación"
+                            app:boxBackgroundMode="outline">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/identificacionET5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="number"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/descripcion5"
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Descripción"
+                            app:boxBackgroundMode="outline"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="300">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/descripcionET5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="300"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/ubicacion5"
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Ubicación en el lugar"
+                            app:boxBackgroundMode="outline"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="250">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ubicacionET5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="250"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/hora_recoleccion5"
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:hint="Hora de recolección"
+                            app:boxBackgroundMode="outline"
+                            app:startIconDrawable="@drawable/baseline_access_time_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/recoleccionET5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="time"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="90dp"
+                android:backgroundTint="@color/green"
+                android:text="GUARDAR DATOS"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

@@ -1,14 +1,330 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray"
     tools:context=".ui.DocumentacionFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="DOCUMENTACIÓN"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:text="Escrito:"
+                            android:textAlignment="center"
+                            android:textColor="@color/orange"
+                            android:textSize="20sp"
+                            android:textStyle="italic" />
+
+                        <GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/escritoSi"
+                                style="@style/TextInputLayoutStyleDrop"
+                                android:layout_width="124dp"
+                                android:layout_height="wrap_content"
+                                app:startIconTint="@color/green"
+                                android:layout_gravity="center_vertical"
+                                android:hint="Si"
+                                app:boxBackgroundMode="outline"
+                                app:startIconDrawable="@drawable/ic_baseline_help_center_24">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/autocompleteescritoSi"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/black"
+                                    android:layout_gravity="center_vertical"
+                                    android:inputType="none"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/escritoNo"
+                                style="@style/TextInputLayoutStyleDrop"
+                                android:layout_width="124dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:textColorHint="@color/black"
+                                android:hint="No"
+                                app:boxBackgroundMode="outline">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/autocompleteescritoNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/black"
+                                    android:inputType="none"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </GridLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:text="Fotográfico:"
+                            android:textAlignment="center"
+                            android:textColor="@color/orange"
+                            android:textSize="20sp"
+                            android:textStyle="italic" />
+
+                        <GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/fotograficoSi"
+                                style="@style/TextInputLayoutStyleDrop"
+                                android:layout_width="124dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                app:boxStrokeColor="@color/black"
+                                android:textColorHint="@color/black"
+                                app:startIconTint="@color/green"
+                                android:hint="Si"
+                                app:boxBackgroundMode="outline"
+                                app:startIconDrawable="@drawable/ic_baseline_help_center_24">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/autocompletefotograficoSi"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/black"
+                                    android:inputType="none"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/fotograficoNo"
+                                style="@style/TextInputLayoutStyleDrop"
+                                android:layout_width="124dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:hint="No"
+                                app:boxBackgroundMode="outline">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/autocompletefotograficoNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/black"
+                                    android:inputType="none"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </GridLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:text="Croquis"
+                            android:textAlignment="center"
+                            android:textColor="@color/orange"
+                            android:textSize="20sp"
+                            android:textStyle="italic" />
+
+                        <GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/croquisSi"
+                                style="@style/TextInputLayoutStyleDrop"
+                                android:layout_width="124dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:hint="Si"
+                                app:boxBackgroundMode="outline"
+                                app:startIconDrawable="@drawable/ic_baseline_help_center_24">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/autocompletecroquisSi"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/black"
+                                    android:inputType="none"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/croquisNo"
+                                style="@style/TextInputLayoutStyleDrop"
+                                android:layout_width="124dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:hint="No"
+                                app:boxBackgroundMode="outline">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/autocompletecroquisNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/black"
+                                    android:inputType="none"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </GridLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:text="Otro"
+                            android:textAlignment="center"
+                            android:textColor="@color/orange"
+                            android:textSize="20sp"
+                            android:textStyle="italic" />
+
+                        <GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/otroSi"
+                                style="@style/TextInputLayoutStyleDrop"
+                                android:layout_width="124dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:hint="Si"
+                                app:boxBackgroundMode="outline"
+                                app:startIconDrawable="@drawable/ic_baseline_help_center_24">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/autocompleteotroSi"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/black"
+                                    android:inputType="none"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/otrosNo"
+                                style="@style/TextInputLayoutStyleDrop"
+                                android:layout_width="124dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:hint="No"
+                                app:boxBackgroundMode="outline">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/autocompleteotroNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/black"
+                                    android:inputType="none"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </GridLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="15dp"
+                            android:hint="Especifique"
+                            app:boxBackgroundMode="outline">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/especifiqueEt"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/black"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="90dp"
+                android:backgroundTint="@color/green"
+                android:text="GUARDAR DATOS"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
