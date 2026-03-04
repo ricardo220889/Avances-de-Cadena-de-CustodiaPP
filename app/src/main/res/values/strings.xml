@@ -3,6 +3,17 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="PrincipalActivity"> Información de la Aplicación:\n\n
+        Al pulsar el botón de "GUARDAR DATOS", La información que se ingresó en cada apartado  del Registro ya se guardó, puedes consultarla (no modificarla) en el apartado de Crear PDF, ubicado en el menú principal.\n\n
+        Para modificar la información de cada apartado deberás llenar de nuevo todo el campo, revisa la información antes de pulsar "GUARDAR DATOS".\n\n
+        El registro de Trazabilidad, no se puede generar desde la aplicación, ya que éste se debe hacer de forma manuscrita debido a las personas que participan en las etapas de la Cadena de Custodia. \n\n
+    Para mayor información revisa nuestra política de privacidad.\n\n
+
+    </string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
     <string name="datos_generales">DATOS GENERALES</string>
     <string name="n_mero_de_referencia">Número de Referencia</string>
     <string name="instituci_n">Institución</string>
