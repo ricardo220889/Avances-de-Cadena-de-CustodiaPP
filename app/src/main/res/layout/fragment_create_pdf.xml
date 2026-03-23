@@ -34,17 +34,2567 @@
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp">
-    </androidx.cardview.widget.CardView>
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="DATOS GENERALES DEL REGISTRO"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Número de Referencia:"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvreferencia"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Institución:"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvinstitucion"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Folio:"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvfolio"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Lugar de Intervención:"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvLugInt"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Fecha:"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvfecha"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Hora:"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvhora"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="INICIO DE LA CADENA DE CUSTODIA"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Localización"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvlocalizacion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Descubrimiento"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvdescubrimiento"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Aportación"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvaportacion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="2in"
             android:layout_height="2.8in"
             android:layout_marginTop="10dp"
-            android:layout_margin="20dp"
-            android:layout_gravity="center"
+            android:layout_margin="10dp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="2in"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="IDENTIDAD"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Primer Indicio"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Identificación"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvidentificacion1"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Descripción"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvdescripcion1"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Ubicación"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvubicacion1"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Recolección"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvrecoleccion1"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Segundo Indicio"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Identificación"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvidentificacion2"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Descripción"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvdescripcion2"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Ubicación"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvubicacion2"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Recolección"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvrecoleccion2"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Tercer Indicio"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Identificación"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvidentificacion3"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Descripción"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvdescripcion3"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Ubicación"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvubicacion3"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Recolección"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvrecoleccion3"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Cuarto Indicio"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Identificación"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvidentificacion4"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Descripción"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvdescripcion4"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Ubicación"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvubicacion4"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Recolección"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvrecoleccion4"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Quinto Indicio"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Identificación"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvidentificacion5"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Descripción"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvdescripcion5"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Ubicación"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvubicacion5"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Recolección"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvrecoleccion5"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="20dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="2in"
+            android:layout_height="2.8in"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="DOCUMENTACIÓN"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text="Documentación Escrita"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="SI"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvescritoSi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="NO"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvescritoNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text="Documentación Fotográfica"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="SI"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvfotograficoSi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="NO"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvfotograficoNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text="Croquis"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="SI"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvcroquisSi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="NO"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvcroquisNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text="Otro"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="SI"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvOtroSi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="NO"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvOtroNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Especifíque"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvespecifique"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="20dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="2in"
+            android:layout_height="2.8in"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="RECOLECCIÓN"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Recolección manual"
+                        android:textAlignment="center"
+                        android:textColor="@color/green2"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvrmanual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="  "
+                        android:textAlignment="center"
+                        android:textColor="@color/rest"
+                        android:textSize="10sp" />
+
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Recolección instrumental"
+                        android:textAlignment="center"
+                        android:textColor="@color/green2"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvrinstrumental"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="  "
+                        android:textAlignment="center"
+                        android:textColor="@color/rest"
+                        android:textSize="10sp" />
+
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="EMBALAJE"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Bolsa"
+                        android:textAlignment="center"
+                        android:textColor="@color/green2"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvbolsa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="  "
+                        android:textAlignment="center"
+                        android:textColor="@color/rest"
+                        android:textSize="10sp" />
+
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Caja"
+                        android:textAlignment="center"
+                        android:textColor="@color/green2"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvcaja"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="  "
+                        android:textAlignment="center"
+                        android:textColor="@color/rest"
+                        android:textSize="10sp" />
+
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Recipiente"
+                        android:textAlignment="center"
+                        android:textColor="@color/green2"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvrecipiente"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="  "
+                        android:textAlignment="center"
+                        android:textColor="@color/rest"
+                        android:textSize="10sp" />
+
+                </GridLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="2in"
+            android:layout_height="2.8in"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text="SERVIDORES PÚBLICOS"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text="Primer Servidor Público:"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Nombre"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvservpub1"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Institución"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvinst1"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Cargo"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvcrg1"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Etapa"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvetp1"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text="Segundo Servidor Público:"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Nombre"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvservpub2"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Institución"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvinst2"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Cargo"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvcrg2"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Etapa"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvetp2"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text="Tercer  Servidor Público:"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Nombre"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvservpub3"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Institución"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvinst3"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Cargo"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvcrg3"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Etapa"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvetp3"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text="Cuarto  Servidor Público:"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Nombre"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvservpub4"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Institución"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvinst4"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Cargo"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvcrg4"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Etapa"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvetp4"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text="Quinto  Servidor Público:"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Nombre"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvservpub5"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Institución"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvinst5"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Cargo"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvcrg5"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Etapa"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvetp5"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text="Sexto  Servidor Público:"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Nombre"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvservpub6"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Institución"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvinst6"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Cargo"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvcrg6"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Etapa"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvetp6"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text="Séptimo  Servidor Público:"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Nombre"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvservpub7"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Institución"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvinst7"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Cargo"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvcrg7"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Etapa"
+                            android:textAlignment="center"
+                            android:textColor="@color/green2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvetp7"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginBottom="20dp"
+                            android:text=" "
+                            android:textAlignment="center"
+                            android:textColor="@color/rest"
+                            android:textSize="10sp" />
+
+                    </GridLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="2in"
+            android:layout_height="2.8in"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="TRASLADO"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Terrestre"
+                        android:textAlignment="center"
+                        android:textColor="@color/green2"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvterrestre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="  "
+                        android:textAlignment="center"
+                        android:textColor="@color/rest"
+                        android:textSize="10sp" />
+
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Aérea"
+                        android:textAlignment="center"
+                        android:textColor="@color/green2"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvaerea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="  "
+                        android:textAlignment="center"
+                        android:textColor="@color/rest"
+                        android:textSize="10sp" />
+
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Marítima"
+                        android:textAlignment="center"
+                        android:textColor="@color/green2"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvmaritima"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="  "
+                        android:textAlignment="center"
+                        android:textColor="@color/rest"
+                        android:textSize="10sp" />
+
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Condiciones especiales para el traslado"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange"
+                    android:textSize="10sp"
+                    android:textStyle="italic" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="SÍ"
+                        android:textAlignment="center"
+                        android:textColor="@color/green2"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvConSi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="  "
+                        android:textAlignment="center"
+                        android:textColor="@color/rest"
+                        android:textSize="10sp" />
+
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="NO"
+                        android:textAlignment="center"
+                        android:textColor="@color/green2"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvconNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="  "
+                        android:textAlignment="center"
+                        android:textColor="@color/rest"
+                        android:textSize="10sp" />
+
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Recomendaciones"
+                        android:textAlignment="center"
+                        android:textColor="@color/green2"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvRecom"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="@color/rest"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+                </GridLayout>
+
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
@@ -68,6 +2618,8 @@
             </LinearLayout>
 
         </ScrollView>
+
+
 
     </LinearLayout>
 

@@ -7,8 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.example.cadenacustodiapp.R
 import com.example.cadenacustodiapp.databinding.FragmentGeneralesBinding
+import com.example.cadenacustodiapp.pdf.CreatePdf
+import com.example.cadenacustodiapp.viewmodel.ViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
@@ -20,7 +23,21 @@ import java.util.Locale
 class GeneralesFragment : BottomSheetDialogFragment() {
 
     private lateinit var binding: FragmentGeneralesBinding
+    private lateinit var viewModel: ViewModel
     private val calendar = Calendar.getInstance()
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val activity = requireActivity()
+        viewModel= ViewModelProvider(activity).get(ViewModel::class.java)
+
+        binding.btn1.setOnClickListener{
+            saveAction()
+            onDismiss()
+
+
+        }
+    }
 
 
     override fun onCreateView(
@@ -117,6 +134,50 @@ class GeneralesFragment : BottomSheetDialogFragment() {
         return binding.root
 
     }
+
+    private fun saveAction(){
+
+        viewModel.referenciavm.value =binding.referenciaEt.text.toString()
+        viewModel.institucionvm.value =binding.institucionEt.text.toString()
+        viewModel.foliovm.value =binding.folioEt.text.toString()
+        viewModel.lugarvm.value =binding.lugIntEt.text.toString()
+        viewModel.fechavm.value =binding.fechaEt.text.toString()
+        viewModel.horavm.value =binding.horaEt.text.toString()
+
+    }
+
+    private fun onDismiss(){
+
+        val builder: AlertDialog.Builder = AlertDialog.Builder(context)
+        builder.setTitle("¿Haz llenado la información necesaria?")
+        builder.setNegativeButton("No"){_,_->
+
+        }
+        builder.setPositiveButton("Sí"){_,_->
+            binding.referenciaEt.setText("")
+            binding.institucionEt.setText("")
+            binding.folioEt.setText("")
+            binding.lugIntEt.setText("")
+            binding.fechaEt.setText("")
+            binding.horaEt.setText("")
+            dismiss()
+
+            val fragment = CreatePdf()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.FragmentContainer, fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+
+
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+
+
+
+
+    }
+
 
     private fun showDatePicker() {
         val datePickerDialog= DatePickerDialog(requireActivity(),{ DatePicker, year:Int,monthOfYear:Int,dayOfMonth:Int->
