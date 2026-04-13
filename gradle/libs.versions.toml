@@ -9,6 +9,7 @@ appcompat = "1.7.1"
 material = "1.10.0"
 activity = "1.6.1"
 constraintlayout = "2.2.1"
+itext = "5.5.10"
 legacySupportV4 = "1.0.0"
 lifecycleLivedataKtx = "2.10.0"
 lifecycleViewmodelKtx = "2.10.0"
@@ -24,6 +25,8 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 justifiedtextview = { module = "com.codesgood:justifiedtextview", version = "1.1.0" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+itext-pdfa = { group = "com.itextpdf", name = "itext-pdfa", version.ref = "itext" }
+itextg = { group = "com.itextpdf", name = "itextg", version.ref = "itext" }
 androidx-legacy-support-v4 = { group = "androidx.legacy", name = "legacy-support-v4", version.ref = "legacySupportV4" }
 androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
 androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }

@@ -50,6 +50,8 @@ dependencies {
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.fragment.ktx)
+    implementation(libs.itext.pdfa)
+    implementation(libs.itextg)
     implementation(libs.justifiedtextview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

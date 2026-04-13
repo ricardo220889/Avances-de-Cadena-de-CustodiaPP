@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.cadenacustodiapp.R
 import com.example.cadenacustodiapp.databinding.FragmentCreatePdfBinding
@@ -35,6 +36,11 @@ class CreatePdf : Fragment() {
 
 
         observarDatos()
+
+        binding.btnCrearPdf.setOnClickListener {
+
+            generarPdf()
+        }
 
     }
 
@@ -351,6 +357,30 @@ class CreatePdf : Fragment() {
 
 
 
+    }
+
+    private fun generarPdf() {
+
+        val context = requireContext()
+
+        val uri = PdfStorageManager().createPdfUri(context, "CadenaCustodia")
+
+        if (uri == null) {
+            Toast.makeText(context, "No se pudo crear el archivo", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        context.contentResolver.openOutputStream(uri)?.use { outputStream ->
+            PdfGenerator().generarPdf(context, viewModel, outputStream)
+        } ?: run {
+            Toast.makeText(context, "Error al abrir archivo", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        Toast.makeText(context, "PDF generado correctamente", Toast.LENGTH_SHORT).show()
+
+
+        PdfViewer().openPdf(context, uri)
     }
 
 
